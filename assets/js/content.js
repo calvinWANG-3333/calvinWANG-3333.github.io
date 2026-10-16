@@ -85,61 +85,86 @@ window.SITE = {
   /* ── THE HOUSE ───────────────────────────────────────────── */
   house: {
     statement: {
-      en: "I work on the data behind luxury prices: where it comes from, whether it can be trusted, and how to show it so someone can decide.",
-      fr: "Je travaille sur la donnée derrière les prix du luxe : d’où elle vient, si l’on peut s’y fier, et comment la montrer pour qu’on puisse décider.",
+      en: "I build analytics pipelines: from raw, messy data to tested models and reports that people can trust and act on.",
+      fr: "Je construis des pipelines analytiques : de la donnée brute et désordonnée jusqu’à des modèles testés et des rapports sur lesquels on peut s’appuyer pour décider.",
     },
     body: {
       en: [
-        "Master’s student in Data Sciences & Business Analytics at ESSEC Business School and CentraleSupélec. Before Paris, investments in Shanghai, then equity research and healthcare consulting.",
-        "My last internship was on the pricing data team of a luxury market-intelligence company. The hard part was rarely the chart. It was knowing the number underneath was right, every week, for every market. So I build the parts that make a dashboard worth believing: models, tests, pipelines.",
+        "Master’s student in Data Sciences & Business Analytics at ESSEC Business School and CentraleSupélec. Before Paris, a degree in investments in Shanghai, then equity research and consulting.",
+        "In research, in consulting and on a pricing data team, the lesson was the same: the hard part is rarely the chart. It is knowing the number underneath is right, every time it refreshes. When a number goes wrong, I look for the part of the setup that let it happen, and fix that.",
       ],
       fr: [
-        "Master Data Sciences & Business Analytics à l’ESSEC Business School et CentraleSupélec. Avant Paris, la finance d’investissement à Shanghai, puis l’equity research et le conseil santé.",
-        "Mon dernier stage s’est déroulé dans l’équipe pricing d’une société d’intelligence de marché pour le luxe. La difficulté était rarement le graphique : c’était de savoir que le chiffre derrière était juste, chaque semaine, sur chaque marché. Je construis donc ce qui rend un dashboard digne de confiance : modèles, tests, pipelines.",
+        "Master Data Sciences & Business Analytics à l’ESSEC Business School et CentraleSupélec. Avant Paris, une licence en finance d’investissement à Shanghai, puis l’equity research et le conseil.",
+        "En recherche, en conseil puis dans une équipe de données de prix, la leçon a été la même : la difficulté est rarement le graphique. C’est de savoir que le chiffre derrière est juste, à chaque mise à jour. Quand un chiffre est faux, je cherche ce qui, dans l’organisation, l’a rendu possible, et je corrige cela.",
       ],
     },
+    // What I do, in any industry
+    practice: [
+      {
+        k: { en: "Analytics pipelines", fr: "Pipelines analytiques" },
+        v: { en: "Raw data to staging to marts, in SQL and dbt. Rebuilt the same way every run, readable at any date.", fr: "De la donnée brute aux marts, en SQL et dbt. Reconstruits à l’identique à chaque exécution, lisibles à n’importe quelle date." },
+      },
+      {
+        k: { en: "Data quality", fr: "Qualité des données" },
+        v: { en: "Tests at every layer, reconciliation and a release gate, so a wrong number is caught before anyone sees it.", fr: "Des tests à chaque couche, des rapprochements et un contrôle avant publication : un chiffre faux est arrêté avant d’être vu." },
+      },
+      {
+        k: { en: "Automation and AI", fr: "Automatisation et IA" },
+        v: { en: "Scripts and AI agents that take over repetitive checks, with fixed rules and a person for anything uncertain.", fr: "Des scripts et des agents IA qui prennent en charge les contrôles répétitifs, avec des règles fixes et une personne pour tout cas incertain." },
+      },
+      {
+        k: { en: "BI and reporting", fr: "BI et reporting" },
+        v: { en: "Metric definitions, dashboards and automated reports, built around the question someone needs answered.", fr: "Définitions de métriques, dashboards et rapports automatisés, pensés pour la question à laquelle il faut répondre." },
+      },
+    ],
     facts: [
       { k: { en: "Based in", fr: "Basé à" }, v: { en: "Paris", fr: "Paris" } },
       { k: { en: "Languages", fr: "Langues" }, v: { en: "Chinese, English, French", fr: "chinois, anglais, français" } },
       { k: { en: "Looking for", fr: "Recherche" }, v: { en: "A six-month graduation internship from July 2027, in Paris or Madrid", fr: "Un stage de fin d’études de six mois dès juillet 2027, à Paris ou Madrid" } },
     ],
-    carnet: [
-      { k: { en: "Reading", fr: "Je lis" }, v: "Ocean Vuong, Annie Ernaux, Sanmao" },
-      { k: { en: "Watching", fr: "Je regarde" }, v: { en: "French New Wave cinema", fr: "La Nouvelle Vague" } },
-      { k: { en: "On repeat", fr: "En boucle" }, v: "Daniel Caesar, oklou, Charli XCX" },
-      { k: { en: "Thinking with", fr: "Je pense avec" }, v: { en: "Camus and the absurd", fr: "Camus et l’absurde" } },
-      { k: { en: "Rooms", fr: "Intérieurs" }, v: { en: "Vincent Van Duysen", fr: "Vincent Van Duysen" } },
-      { k: { en: "Training", fr: "Sport" }, v: { en: "Six days a week", fr: "Six jours sur sept" } },
-    ],
+    // A few lines about life outside work
+    offDuty: {
+      en: "Away from data, I read Ocean Vuong, Annie Ernaux and Sanmao, watch films from the French New Wave, and keep Daniel Caesar and oklou on repeat. I train six days a week, and I’m learning French one lesson at a time; Paris makes a good classroom.",
+      fr: "Loin des données, je lis Ocean Vuong, Annie Ernaux et Sanmao, je regarde les films de la Nouvelle Vague, et Daniel Caesar et oklou tournent en boucle. Je m’entraîne six jours sur sept et j’apprends le français, une leçon à la fois ; Paris est une bonne salle de classe.",
+    },
   },
 
   /* ── EXPERIENCE (newest first) ───────────────────────────── */
   experience: [
     {
-      when: { en: "2026", fr: "2026" },
+      when: { en: "Apr – Sep 2026", fr: "avr. – sept. 2026" },
       role: { en: "Quantitative Data Analyst, intern", fr: "Quantitative Data Analyst, stage" },
       org: "LuxuryNsight, Paris",
       note: {
-        en: "QA and delivery of luxury pricing data for seven client brands. Automated the quarterly price-increases deck; built an AI price-verification agent.",
-        fr: "Contrôle qualité et livraison des données de prix pour sept marques clientes. Automatisation du rapport trimestriel des hausses de prix ; création d’un agent IA de vérification.",
+        en: "Ran the quality gate of a weekly and monthly pricing data pipeline for seven clients: reconciliation, anomaly checks, release. Automated the quarterly pricing report in Python and built an AI agent that re-checks flagged prices.",
+        fr: "Contrôle qualité d’un pipeline de données de prix hebdomadaire et mensuel pour sept clients : rapprochements, détection d’anomalies, mise en production. Automatisation du rapport trimestriel en Python et création d’un agent IA qui revérifie les prix signalés.",
       },
     },
     {
-      when: { en: "2022", fr: "2022" },
+      when: { en: "Jan – May 2023", fr: "janv. – mai 2023" },
+      role: { en: "Equity Research, intern", fr: "Equity Research, stage" },
+      org: "Guotai Junan Securities, Shanghai",
+      note: {
+        en: "Company and industry research: revenue models, DCF valuation and sensitivity analysis, with data prepared in MySQL for weekly Power BI tracking reports.",
+        fr: "Recherche sur des entreprises et des secteurs : modèles de revenus, valorisation DCF et analyse de sensibilité, avec des données préparées sous MySQL pour des suivis hebdomadaires sous Power BI.",
+      },
+    },
+    {
+      when: { en: "Jun 2022 – Jan 2023", fr: "juin 2022 – janv. 2023" },
       role: { en: "Equity Research, intern", fr: "Equity Research, stage" },
       org: "Minsheng Securities, Shanghai",
       note: {
-        en: "A 100-page initiation report on FESCO, with a segment revenue model, DCF and sensitivity analysis.",
-        fr: "Un rapport d’initiation de 100 pages sur FESCO : modèle de revenus par segment, DCF et analyse de sensibilité.",
+        en: "A 100-page initiation report on FESCO, with a segment revenue model, DCF and sensitivity analysis. Built small data warehouses in SSAS on top of a MySQL ETL to compare industry metrics.",
+        fr: "Un rapport d’initiation de 100 pages sur FESCO : modèle de revenus par segment, DCF et analyse de sensibilité. Petits entrepôts de données sous SSAS, alimentés par un ETL MySQL, pour comparer des indicateurs sectoriels.",
       },
     },
     {
-      when: { en: "2021", fr: "2021" },
-      role: { en: "Consultant Assistant, intern", fr: "Assistant consultant, stage" },
+      when: { en: "Aug 2021 – Feb 2022", fr: "août 2021 – févr. 2022" },
+      role: { en: "Part-time Associate, business intelligence", fr: "Associate à temps partiel, business intelligence" },
       org: "ZS Associates, Shanghai",
       note: {
-        en: "Market research on China’s Huiminbao health insurance and more than 40 expert interviews.",
-        fr: "Étude de marché sur l’assurance santé Huiminbao en Chine et plus de 40 entretiens d’experts.",
+        en: "Maintained the team’s daily pharma-market dashboard in Power BI and built more than 50 interactive reports and visuals that the team used for day-to-day decisions.",
+        fr: "Suivi du dashboard quotidien du marché pharmaceutique sous Power BI et création de plus de 50 rapports et visuels interactifs utilisés par l’équipe pour ses décisions au quotidien.",
       },
     },
   ],
