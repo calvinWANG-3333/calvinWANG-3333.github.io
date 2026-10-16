@@ -10,11 +10,11 @@ Plain HTML, CSS and JavaScript. No framework and no build step. English and Fren
 
 | Section | What it is |
 |---|---|
-| Hero | Full-screen photograph of Paris, the `RUIHANG WANG / PARIS` lockup |
-| Collection | Index of every project; finished ones link to their room, upcoming ones are grey |
+| Hero | Full-screen photograph of Paris; the `RUIHANG WANG / PARIS` lockup spans the page and shrinks into the header as you scroll |
+| Collection | Index of every project, sliding up over the photograph; finished ones link to their room, upcoming ones are grey |
 | Rooms | One screen per project: the work on a grey wall, the description beside it |
-| Interlude | Full-screen image of the tower, out of focus |
-| The House | About, on black, with the portrait |
+| Interlude | Full-screen image of the tower, out of focus; The House slides over it |
+| The House | About, practice, a few lines off duty, on black, with the portrait |
 | Experience | Internships, education, skills |
 | Contact | Links on the dark wall beside a Paris window |
 
@@ -23,7 +23,8 @@ Plain HTML, CSS and JavaScript. No framework and no build step. English and Fren
 ```
 index.html              page shell; every section is filled from content.js
 assets/js/content.js    ALL text and projects: the file you normally edit
-assets/js/main.js       renders content.js, language switch, header, index hover
+assets/js/main.js       renders content.js, language switch, header, scroll motion
+assets/js/vendor/       Lenis smooth scrolling (MIT licence)
 assets/css/style.css    the design
 assets/img/             photographs, project works, social preview, favicon
 assets/fonts/           fallback typeface for systems without Helvetica
@@ -56,7 +57,13 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Motion
+
+Smooth scrolling (Lenis), the lockup that shrinks into the header, sections that slide over pinned photographs, images that open like a curtain, and text that rises in. Everything is switched off for visitors who ask their system for reduced motion.
+
 ## Credits
+
+Smooth scrolling: Lenis by darkroom.engineering, MIT licence (`assets/js/vendor/LENIS-LICENSE.txt`).
 
 Typeface fallback: TeX Gyre Heros, GUST Font License (`assets/fonts/GUST-FONT-LICENSE.txt`). On Apple devices the page uses the system Helvetica Neue.
 Photographs of Paris: by the author; two are generated in code.
